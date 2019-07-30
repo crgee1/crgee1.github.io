@@ -1,12 +1,11 @@
-Dimension by HTML5 UP
+Fractal by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+A simple landing page template for showcasing mobile apps (although it'll definitely work
+for other stuff if you get rid of the phone :) Lightweight, fully responsive, and built on
+HTML5, Sass, and flexbox.
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.

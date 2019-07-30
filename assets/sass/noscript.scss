@@ -3,48 +3,30 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
+@import 'libs/html-grid';
 
 /*
-	Dimension by HTML5 UP
+	Fractal by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-/* BG */
-
-	#bg {
-		body.is-preload & {
-			&:before {
-				background-color: transparent;
-			}
-		}
-	}
 
 /* Header */
 
 	#header {
 		body.is-preload & {
-			> * {
+			.content {
+				@include vendor('transform', 'none');
 				opacity: 1;
 			}
 
-			@include vendor('filter', 'none');
+			.image {
+				@include vendor('transform', 'none');
+				opacity: 1;
 
-			.content {
-				.inner {
-					max-height: none;
-					padding: 3rem 2rem;
+				img {
 					opacity: 1;
 				}
 			}
-		}
-	}
-
-/* Main */
-
-	#main {
-		article {
-			opacity: 1;
-			margin: (_size(element-margin) * 2) 0 0 0;
 		}
 	}

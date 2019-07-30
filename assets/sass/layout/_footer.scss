@@ -1,5 +1,5 @@
 ///
-/// Dimension by HTML5 UP
+/// Fractal by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -7,31 +7,37 @@
 /* Footer */
 
 	#footer {
-		@include vendor('transition', (
-			'transform #{_duration(article)} ease-in-out',
-			'filter #{_duration(article)} ease-in-out',
-			'opacity #{_duration(article)} ease-in-out',
-		));
-		width: 100%;
-		max-width: 100%;
-		margin-top: 2rem;
+		@include color-typography(accent3);
+		@include padding(4.5em, 0);
+		color: _palette(accent3, fg-light);
 		text-align: center;
 
+		a {
+			color: inherit;
+		}
+
 		.copyright {
-			letter-spacing: _font(letter-spacing);
-			font-size: 0.6rem;
-			opacity: 0.75;
-			margin-bottom: 0;
-			text-transform: uppercase;
+			font-size: 0.8em;
 		}
 
-		body.is-article-visible & {
-			@include vendor('transform', 'scale(0.95)');
-			@include vendor('filter', 'blur(0.1rem)');
-			opacity: 0;
-		}
+		// Medium.
+			@include breakpoint('<=medium') {
+				@include padding(4em, 4em);
+			}
 
-		body.is-preload & {
-			opacity: 0;
-		}
+		// Small.
+			@include breakpoint('<=small') {
+
+				// Landscape.
+					@include orientation(landscape) {
+						@include padding(3em, 3em);
+					}
+
+				// Portrait.
+					@include orientation(portrait) {
+						@include padding(3em, 1.5em);
+					}
+
+			}
+
 	}
