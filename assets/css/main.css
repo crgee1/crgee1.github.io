@@ -159,7 +159,6 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 	}
 
 		a:hover {
@@ -181,7 +180,8 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0 0;
+		/* margin: 0 0 1em 0; */
 		letter-spacing: -0.0125em;
 	}
 
