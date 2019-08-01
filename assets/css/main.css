@@ -3801,7 +3801,11 @@ input, select, textarea {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 			color: #ffffff;
+
 		}
+				#header a:hover {
+					text-decoration: underline;
+				}
 
 		#header strong, #header b {
 			color: #ffffff;
